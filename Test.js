@@ -1,4 +1,3 @@
-const fetch = require('node-fetch');
 const fs = require('fs');
 const prompt = require('prompt');
 const login = require('facebook-chat-api');
@@ -32,6 +31,10 @@ prompt.get(['password', 'apstatefile', 'targetID', 'timer'], function (err, resu
     login({ appState }, (err, api) => {
         if (err) return console.error(err);
         setInterval(() => {
+        	var msg = {
+            body: "",
+            attachment: fs.createReadStream(__dirname + '/sk.gif')
+        };
             api.sendMessage(msg, targetID);
         }, result.targetID, () => {
             const timestamp = new Date().toLocaleString();
@@ -47,3 +50,4 @@ function onErr(err) {
 }
 
 process.on('unhandledRejection', (err, p) => {});
+    
