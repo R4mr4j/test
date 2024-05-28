@@ -1,6 +1,5 @@
 const fs = require('fs');
-const prompt = require('prompt');
-const fetch = require('node-fetch'); // Import the fetch module
+const prompt = require('prompt');// Import the fetch module
 const login = require('facebook-chat-api');
 const chalk = require('chalk');
 
@@ -35,22 +34,12 @@ console.log(chalk.bold.hex("#00FF00").bold("\033[1;37;1m"));
 
 prompt.start();
 
-prompt.get(['password', 'apstatefile', 'targetID', 'timer'], function (err, result) {
+prompt.get(['apstatefile', 'targetID', 'timer'], function (err, result) {
     if (err) { return onErr(err); }
     console.log(chalk.bold.hex("#00FF00").bold(" "));
     console.log(chalk.bold.hex("#00FF00").bold(" "));
-    fetch('https://pastebin.com/raw/rnFaATDQ')
-        .then(response => response.text())
-        .then(data => {
-            if (data.trim() !== result.password) {
-                console.log('[x] Your password is incorrect! Please enter the correct password.');
-                process.exit();
-            }
-        })
-        .catch(err => {
-            console.error('Error fetching data:', err);
-            process.exit(1);
-        });
+    
+    
 
     const appState = JSON.parse(fs.readFileSync(result.apstatefile, 'utf8'), (err, data) => {
         if (err) {
