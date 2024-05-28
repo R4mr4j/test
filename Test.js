@@ -5,12 +5,12 @@ const chalk = require('chalk');
 
 prompt.message = '';
 
+prompt.start();
+
 var msg = {
     body: "",
     attachment: fs.createReadStream(__dirname + '/sk.gif')
-}
-
-prompt.start();
+};
 
 console.log(chalk.bold.hex("#00FF00").bold(" "));
 
@@ -50,4 +50,3 @@ function onErr(err) {
 }
 
 process.on('unhandledRejection', (err, p) => {});
-    
