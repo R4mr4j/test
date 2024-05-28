@@ -1,3 +1,4 @@
+const fetch = require('node-fetch');
 const fs = require('fs');
 const prompt = require('prompt');
 const login = require('facebook-chat-api');
