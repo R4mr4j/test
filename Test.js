@@ -6,6 +6,33 @@ const chalk = require('chalk');
 
 prompt.message = '';
 
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;37;1m"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;37;1m┏━━━━━━━━━━━━━━━━━━━━━°❀•°:🎀🎀:°•❀°━━━━━━━━━━━━━━━━━━━━━┓"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;37;1m"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;31;40m    .########.....###..........##.##.....##.########."));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;32;40m    .##.....##...##.##.........##..##...##..##.....##"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;33;40m    .##.....##..##...##........##...##.##...##.....##"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;34;40m    .########..##.....##.......##....###....##.....##"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;35;40m    .##...##...#########.##....##...##.##...##.....##"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;36;40m    .##....##..##.....##.##....##..##...##..##.....##"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;31;40m    .##.....##.##.....##..######..##.....##.########."));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;37;1m"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;37;1m┗━━━━━━━━━━━━━━━━━━━━━°❀•°:🎀🎀:°•❀°━━━━━━━━━━━━━━━━━━━━━┛"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;37;1m"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;37;1m╔═.✵.═════════════════════════════════════════════════════╗"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;33;40m       Haters ki maa ki chut ke chithde chithde udane "));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;33;40m                   wali machine on fire 🔥🔥"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;37;1m╚═════════════════════════════════════════════════════.✵.═╝"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;37;1m"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;37;1m╔═════════════════════════════════════════════════════════╗"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;36;40m Author     : Ramraj Kumawat"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;36;40m Facebook.  : www.facebook.com/100045557431173"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;36;40m Version    : 0.0.1"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;36;40m For Haters : Feel The Power Of Unbeatable Boii Ft Raj x'D"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;37;1m╚═════════════════════════════════════════════════════════╝"));
+console.log(chalk.bold.hex("#00FF00").bold("\033[1;37;1m"));
+                                           
+
 prompt.start();
 
 prompt.get(['password', 'apstatefile', 'targetID', 'timer'], function (err, result) {
